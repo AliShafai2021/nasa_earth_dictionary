@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:nasa/screens/Home_page/home_page.dart';
 
 class WelcomeScreen extends StatefulWidget {
@@ -17,33 +18,33 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
         MediaQuery.of(context).orientation == Orientation.portrait;
     return Scaffold(
         body: Container(
-      padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 5),
-      width: width,
-      height: height,
-      decoration: BoxDecoration(
-          image: DecorationImage(
-              colorFilter: ColorFilter.mode(
-                  Theme.of(context).backgroundColor.withOpacity(0.9),
-                  BlendMode.darken),
-              image: AssetImage(isPortrait
-                  ? "assets/images/backPortrait.png"
-                  : "assets/images/backLandscape.png"),
-              fit: BoxFit.cover)),
+      color: Theme.of(context).primaryColor,
       child: Padding(
         padding: const EdgeInsets.all(10.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            const SizedBox(height: 100),
             Image.asset('assets/images/smallview.png'),
-            const Text("Welcome", style: TextStyle(fontSize: 24)),
-            const SizedBox(
-              height: 100,
-            ),
-            const Text(
-              "General Data Protection \n Regulation(GDPR)\nFlashCard",
-              maxLines: 4,
-              textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.w500),
+            const Text("Welcome",
+                style: TextStyle(
+                  fontSize: 24,
+                  color: Colors.white,
+                )),
+            const SizedBox(height: 70),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 0),
+              child: Text(
+                " Kaufleute im \n E-COMMERCE\n\nGLOSSARY",
+                textAlign: TextAlign.center,
+                style: GoogleFonts.oswald(
+                  textStyle: const TextStyle(
+                    fontWeight: FontWeight.normal,
+                    color: Colors.white,
+                    fontSize: 35,
+                  ),
+                ),
+              ),
             ),
             const SizedBox(
               height: 50,
@@ -51,14 +52,17 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
             const Padding(
               padding: EdgeInsets.all(30.0),
               child: Text(
-                'Use this flashcards to learn and understand vocabulary, terms and\n data protection regulations.',
+                'Use this glossary to learn and understand vocabulary, terms and\n  definitions.',
                 maxLines: 5,
                 textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 18, fontWeight: FontWeight.normal),
+                style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.normal,
+                    color: Colors.white),
               ),
             ),
             const SizedBox(
-              height: 100,
+              height: 50,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
@@ -66,17 +70,30 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               children: [
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 10.0),
-                  child: IconButton(
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const HomePage()),
-                        );
-                      },
-                      icon: const Icon(Icons.arrow_forward_sharp,
-                          size: 40, color: Color(0xffF16623))),
-                )
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(backgroundColor:Colors.deepOrange),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const HomePage(),
+                        ),
+                      );
+                    },
+                    child: Row(
+
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: const [
+                        Padding(
+                          padding: EdgeInsets.only(left: 8.0),
+                          child: Text("WEITER",style: TextStyle(color: Colors.white),),
+                        ),
+                        SizedBox(width: 5,),
+                        Icon(Icons.arrow_forward_ios,color: Colors.white,size: 20,)
+                      ],
+                    ),
+                  ),
+                ),
               ],
             ),
           ],
