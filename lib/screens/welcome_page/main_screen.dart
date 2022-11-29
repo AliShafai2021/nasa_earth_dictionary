@@ -34,7 +34,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                         fontSize: 24,
                         color: Colors.white,
                       )),
-                  const SizedBox(height: 30),
+                  const SizedBox(height: 20),
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 0),
                     child: Text(
@@ -49,9 +49,6 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                       ),
                     ),
                   ),
-                  const SizedBox(
-                    height: 20,
-                  ),
                   const Padding(
                     padding: EdgeInsets.all(30.0),
                     child: Text(
@@ -63,9 +60,6 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                           fontWeight: FontWeight.normal,
                           color: Colors.white),
                     ),
-                  ),
-                  const SizedBox(
-                    height: 15,
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.end,
