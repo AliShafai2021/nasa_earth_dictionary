@@ -27,14 +27,14 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 //crossAxisAlignment: CrossAxisAlignment.stretch, adjustment
                 children: [
-                  const SizedBox(height: 35),
+                  const SizedBox(height: 40),
                   Image.asset('assets/images/smallview.png'),
                   const Text("Welcome",
                       style: TextStyle(
                         fontSize: 24,
                         color: Colors.white,
                       )),
-                  const SizedBox(height: 20),
+                  const SizedBox(height: 35),
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 0),
                     child: Text(
@@ -44,10 +44,13 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                         textStyle: const TextStyle(
                           fontWeight: FontWeight.normal,
                           color: Colors.white,
-                          fontSize: 27,
+                          fontSize: 30,
                         ),
                       ),
                     ),
+                  ),
+                  const SizedBox(
+                    height: 35,
                   ),
                   const Padding(
                     padding: EdgeInsets.all(30.0),
@@ -60,6 +63,9 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                           fontWeight: FontWeight.normal,
                           color: Colors.white),
                     ),
+                  ),
+                  const SizedBox(
+                    height: 30,
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.end,
