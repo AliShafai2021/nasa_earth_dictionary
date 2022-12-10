@@ -37,15 +37,28 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   const SizedBox(height: 50),
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 0),
-                    child: Text(
-                      " Kaufleute im \n E-COMMERCE\n\nGLOSSARY",
-                      textAlign: TextAlign.center,
+                    child: RichText(
+                      text: TextSpan(
+                        text: " Kaufleute im \n E-COMMERCE\n\n",
+                        //textAlign: TextAlign.center,
+                        style: GoogleFonts.oswald(
+                          textStyle: const TextStyle(
+                            color: Colors.white,
+                            fontSize: 30,
+                          ),
+                        ),
+                        children: [
+                      TextSpan(
+                      text: "   GLOSARY",
+                     // textAlign: TextAlign.center,
                       style: GoogleFonts.oswald(
                         textStyle: const TextStyle(
-                          fontWeight: FontWeight.normal,
-                          color: Colors.white,
-                          fontSize: 30,
+                          color: Colors.red,
+                          fontSize: 32,
                         ),
+                      ),
+                      )
+                        ]
                       ),
                     ),
                   ),
