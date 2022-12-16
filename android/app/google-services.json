@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "381307364614",
+    "project_id": "nasaearthdictionary",
+    "storage_bucket": "nasaearthdictionary.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:381307364614:android:166d754d379e85bb93aa87",
+        "android_client_info": {
+          "package_name": "com.example.nasa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "381307364614-4mgnunp7ku88tcpuab0ik7n4hccg80c0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUwwqZmdcTxn55Yl8O-JdvCiYU-OGmmP8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "381307364614-4mgnunp7ku88tcpuab0ik7n4hccg80c0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
