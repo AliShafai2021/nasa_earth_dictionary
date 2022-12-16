@@ -8,7 +8,12 @@ import 'package:firebase_core/firebase_core.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  await Firebase.initializeApp(options:const FirebaseOptions(
+      apiKey: "AIzaSyD0P7H9EFTAZfkoo-_MurA9sifcP0rOLrY",
+      appId: "1:381307364614:web:422896769e2080d193aa87",
+      messagingSenderId: "381307364614",
+      projectId:"nasaearthdictionary",) );
+
   runApp(const MyApp());
 }
 class MyApp extends StatelessWidget {
