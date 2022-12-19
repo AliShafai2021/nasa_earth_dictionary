@@ -1,5 +1,10 @@
 # Miscellaneous
 node_modules
+.firebase
+.firebaserc
+package-lock.json
+firebase.json
+package.json
 *.class
 *.log
 *.pyc
