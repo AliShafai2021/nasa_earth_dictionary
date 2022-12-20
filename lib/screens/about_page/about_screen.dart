@@ -12,16 +12,16 @@ class AboutScreen extends StatelessWidget {
       body: Center(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
-          children: const <Widget>[
+          children: const[
             Text(
-              "Made By",
+              "Postanschrift",
               style: TextStyle(fontSize: 60.0, fontWeight: FontWeight.bold),
             ),
             SizedBox(
               height: 50.0,
             ),
             Text(
-              "Raunak Agarwal\nRohit Kapoor\nUtkarsh Raj\nBiswajit Behera",
+              "Dr. Marius Ebert\nHauptstraße 127\n69117 Heidelberg\nBiswajit Behera\nEmail: info@spasslerndenk.de",
               style: TextStyle(fontSize: 20.0),
             )
           ],
